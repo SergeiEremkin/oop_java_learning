@@ -21,8 +21,7 @@ public class Milk extends Product {
 
     @Override
     public String toString() {
-        // TODO Auto-generated method stub
-        return String.format("%s  %d", super.toString(), fatness);
+        return String.format("%s  %d", super.toString(), getFatness());
     }
 
 }
