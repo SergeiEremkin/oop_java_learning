@@ -8,11 +8,11 @@ public class Main {
 
         Zoo zoo = new Zoo();
         zoo.talk();
-        System.out.println("run");
+        System.out.println("run\n");
         zoo.run();
-        System.out.println("fly");
+        System.out.println("fly\n");
         zoo.fly();
-        System.out.println("swim");
+        System.out.println("swim\n");
         zoo.swim();
 
 
