@@ -7,7 +7,7 @@ import java.util.List;
 public class Zoo {
     private List<Animal> animals;
     public Zoo() {
-        animals = new ArrayList<>(Arrays.asList(new Fish("barsik","vislauh", "black", 4,6),new Cat("barsik","vislauh", "black", 4,6)
+        animals = new ArrayList<>(Arrays.asList(new Shark("vasya","tigrovaya","white", 0, 3),new Fish("barsik","vislauh", "black", 4,6),new Cat("barsik","vislauh", "black", 4,6)
         ,new Dog("sedi","ratvailer", "brown", 4,2), new Duck("kru","rat", "white", 2,1)));
 
     }
@@ -49,6 +49,16 @@ public class Zoo {
         return result;
     }
 
+    public List<SwimAble> getSwimAble(){
+        List<SwimAble> result = new ArrayList<>();
+        for (Animal swimItem:animals) {
+            if (swimItem instanceof SwimAble){
+                result.add((SwimAble) swimItem);
+            }
+        }
+        return result;
+    }
+
     public void run() {
         for (RunAble item :getRunAble()) {
             System.out.printf("%s,%s\n",item.toString(),item.run());
@@ -59,6 +69,13 @@ public class Zoo {
     public void fly() {
         for (FlyAble item :getFlyAble()) {
             System.out.printf("%s,%s\n",item.toString(),item.fly());
+
+        }
+    }
+
+    public void swim() {
+        for (SwimAble item :getSwimAble()) {
+            System.out.printf("%s,%s\n",item.toString(),item.swim());
 
         }
     }
