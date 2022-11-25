@@ -1,18 +1,20 @@
 package Seminar3;
 
+import java.util.List;
+
 public class User implements Comparable<User> {
     private String firstName;
     private String lastName;
     private Integer age;
-    //private Personal subordinates;
+    private Personal subordinates;
 
-    // public Personal getSubordinates() {
-    //     return subordinates;
-    // }
+    public Personal getSubordinates() {
+        return subordinates;
+    }
 
-    // public void setSubordinates(List<User> subordinates) {
-    //     this.subordinates = new Personal(subordinates);
-    // }
+    public void setSubordinates(List<User> subordinates) {
+        this.subordinates = new Personal(subordinates);
+    }
 
     public User(String firstName, String lastName, Integer age) {
         this.firstName = firstName;
@@ -45,7 +47,6 @@ public class User implements Comparable<User> {
     public int compareTo(User other) {
         String tmpVar = this.firstName + this.lastName;
         String tmpOther = other.firstName + other.lastName;
-        System.out.printf("%s %s\n", tmpVar, tmpOther);
         int result = tmpVar.compareTo(tmpOther);
         if (result == 0) {
             if (this.age == other.age) {

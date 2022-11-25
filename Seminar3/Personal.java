@@ -12,6 +12,9 @@ public class Personal implements Iterable<User> {
         this.users = users;
     }
 
+    public Integer size(){
+        return users.size();
+    }
     @Override
     public Iterator<User> iterator() {
 
