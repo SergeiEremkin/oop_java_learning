@@ -24,18 +24,17 @@ public class Team<T extends Warrior> implements Iterable<T> {
 
     @Override
     public String toString() {
-        StringBuilder sb = new StringBuilder(hero.toString() +"\n");
-       for (T t : this) {
-        sb.append(t.toString()+ "\n");
-       }
-        // TODO Auto-generated method stub
+        StringBuilder sb = new StringBuilder(hero.toString() + "\n");
+        for (T t : this) {
+            sb.append(t.toString() + "\n");
+        }
         return sb.toString();
     }
 
-    public Integer getTeamHealthPoint(){
+    public Integer getTeamHealthPoint() {
         int sum = hero.getHealthPoint();
         for (T t : this) {
-            sum+=t.getHealthPoint();
+            sum += t.getHealthPoint();
         }
         return sum;
     }

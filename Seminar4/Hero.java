@@ -1,9 +1,14 @@
 package Seminar4;
 
-public class Hero extends Warrior {
+public class Hero extends Warrior<Weapon, HeavyShield> {
 
-    public Hero(String name, Weapon weapon, Integer healthPoint) {
-        super(name, weapon, healthPoint);
+    public Hero(String name, Integer healthPoint, Weapon weapon, HeavyShield shield) {
+        super(name, healthPoint, weapon, shield);
+
+    }
+
+    public Hero(String name, Integer healthPoint, Weapon weapon) {
+        super(name, healthPoint, weapon);
     }
 
     @Override
