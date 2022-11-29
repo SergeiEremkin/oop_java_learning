@@ -1,11 +1,11 @@
 package Seminar4;
 
-public abstract class Warrior {
+public abstract class Warrior <T extends Weapon> {
     private String name;
-    private Weapon weapon;
+    private T weapon;
     private Integer healthPoint;
 
-    public Warrior(String name, Weapon weapon, Integer healthPoint) {
+    public Warrior(String name, T weapon, Integer healthPoint) {
         this.name = name;
         this.weapon = weapon;
         this.healthPoint = healthPoint;

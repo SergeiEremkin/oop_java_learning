@@ -4,7 +4,7 @@ public class Main {
     public static void main(String[] args) {
         Hero hero1 = new Hero("Володя",new Staff(), 150);
         Team<Archer> red = new Team<>(hero1);
-        red.add(new Archer("Леголас", new Bow(), 100, 10));
+        red.add(new Archer("Леголас", new LongBow(), 100, 10));
         red.add(new Archer("Робин Гуд", new Bow(), 100, 10));
         red.add(new Archer("Василий Зайцев", new Bow(), 100, 10));
         Hero hero2 = new Hero("Гимли",new Bow(), 150);
@@ -20,5 +20,9 @@ public class Main {
         System.out.println(red);
         System.out.println(white);
         System.out.println(multi);
+        System.out.println(red.getTeamHealthPoint());
+        System.out.println(white.getTeamHealthPoint());
+        System.out.println(multi.getTeamHealthPoint());
+        
     }
 }

@@ -1,6 +1,6 @@
 package Seminar4;
 
-public class Archer extends Warrior {
+public class Archer extends Warrior<Bow> {
     private Integer range;
 
     public Archer(String name, Bow weapon, Integer healthPoint, Integer range) {
