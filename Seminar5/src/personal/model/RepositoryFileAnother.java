@@ -3,11 +3,11 @@ package personal.model;
 import java.util.ArrayList;
 import java.util.List;
 
-public class RepositoryFile implements Repository {
-    private UserMapper mapper = new UserMapper();
+public class RepositoryFileAnother implements Repository {
+    private UserMApperAnother mapper = new UserMApperAnother();
     private FileOperation fileOperation;
 
-    public RepositoryFile(FileOperation fileOperation) {
+    public RepositoryFileAnother(FileOperation fileOperation) {
         this.fileOperation = fileOperation;
     }
 
@@ -82,5 +82,4 @@ public class RepositoryFile implements Repository {
         saveUsers(users);
         
     }
-
 }

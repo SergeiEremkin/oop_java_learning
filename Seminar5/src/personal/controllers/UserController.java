@@ -32,6 +32,10 @@ public class UserController {
 
     }
 
+    public void deleteUser(User user) throws Exception{
+        repository.deleteUser(user);  
+    }
+
     private void validateUser(User user) throws Exception {
         if (user.getFirstName().isEmpty()) {
             throw new Exception("Отсутствует имя");

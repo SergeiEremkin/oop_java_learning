@@ -48,6 +48,11 @@ public class ViewUser {
                         User updateUser = setUser(true);
                         userController.updateUser(updateUser);
                         break;
+                    case DELETE:
+                           String userId = prompt("Идентификатор пользователя: ");
+                           User needTodeleteUser = userController.readUser(userId);
+                           userController.deleteUser(needTodeleteUser);
+                           break;  
                 }
             } catch (Exception e) {
                 System.out.println(e.getMessage());

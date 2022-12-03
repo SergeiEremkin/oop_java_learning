@@ -1,0 +1,10 @@
+дек. 03, 2022 11:20:27 PM Homework5.Views.ViewCalc run
+INFO: 3.0 + 23.0i + 32.0 + 4.0i = 35.0 + 27.0i
+дек. 03, 2022 11:23:44 PM Homework5.Views.ViewCalc run
+WARNING: Нужно ввести Double
+дек. 03, 2022 11:23:56 PM Homework5.Views.ViewCalc run
+INFO: (4.0 + 5.0i) + (6.0 + 7.0i) = 10.0 + 12.0i
+дек. 03, 2022 11:48:50 PM Homework5.Views.ViewCalc run
+INFO: (323.0 + 232.0i) + (32.0 + 32.0i) = 355.0 + 264.0i
+дек. 03, 2022 11:52:04 PM Homework5.Views.ViewCalc run
+INFO: (323.0 + 323.0i) + (323.0 + 32.0i) = 646.0 + 355.0i
